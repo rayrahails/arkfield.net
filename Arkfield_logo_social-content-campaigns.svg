@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
+  <title id="title">Arkfield</title>
+  <desc id="description">Arkfield — Social, Content, Campaigns</desc>
+
+  <defs>
+    <linearGradient id="arkfield-teal-dark" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#00635f"/>
+      <stop offset="1" stop-color="#008e95"/>
+    </linearGradient>
+    <linearGradient id="arkfield-teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0798a3"/>
+      <stop offset="1" stop-color="#006f73"/>
+    </linearGradient>
+    <linearGradient id="arkfield-green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#18ad80"/>
+      <stop offset="1" stop-color="#24c496"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Existing AF mark, cleaned for production use. -->
+  <g aria-hidden="true">
+    <path fill="url(#arkfield-teal-dark)" d="M54 244 157 42l36 66-70 136Z"/>
+    <path fill="url(#arkfield-teal)" d="m157 42 112 202h-67L126 104Z"/>
+    <path fill="url(#arkfield-green)" d="M181 48h123l-27 52h-69Z"/>
+    <path fill="#ff8a18" d="M216 121h63l-20 46h-23Z"/>
+  </g>
+
+  <!-- Updated positioning lockup. -->
+  <g fill="#102731">
+    <text x="345" y="142" font-family="Montserrat, Avenir Next, Avenir, Arial, sans-serif" font-size="92" font-weight="700" letter-spacing="8">ARKFIELD</text>
+    <text x="350" y="194" font-family="Montserrat, Avenir Next, Avenir, Arial, sans-serif" font-size="22" font-weight="500" letter-spacing="6.2">SOCIAL <tspan fill="#ff8a18">•</tspan> CONTENT <tspan fill="#ff8a18">•</tspan> CAMPAIGNS</text>
+  </g>
+</svg>
