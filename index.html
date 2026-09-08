@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Arkfield | Social Media Marketing &amp; Campaign Management</title>
+  <meta name="description" content="Arkfield delivers social media strategy, campaign management, content creation, and specialist writing. Our new website is currently being prepared.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://arkfield.net/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Arkfield">
+  <meta property="og:title" content="Arkfield | Social Media Marketing &amp; Campaign Management">
+  <meta property="og:description" content="Strategy, content, and campaign management for brands ready to move forward.">
+  <meta property="og:url" content="https://arkfield.net/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arkfield | Social Media Marketing &amp; Campaign Management">
+  <meta name="twitter:description" content="Strategy, content, and campaign management for brands ready to move forward.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Arkfield",
+    "url": "https://arkfield.net/",
+    "logo": "https://arkfield.net/Arkfield_logo_social-content-campaigns.svg",
+    "description": "Social media strategy, campaign management, content creation, and specialist writing services."
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #102731;
+      --muted: #586a70;
+      --line: #dfe7e5;
+      --paper: #ffffff;
+      --soft: #f5f9f8;
+      --teal: #007b7d;
+      --green: #20b98a;
+      --orange: #ff8a18;
+      --content: 74rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      color-scheme: light;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-width: 20rem;
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 10;
+      padding: 0.7rem 1rem;
+      color: #fff;
+      background: var(--ink);
+      transform: translateY(-150%);
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .shell {
+      width: min(calc(100% - 3rem), var(--content));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      min-height: 8.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: inline-flex;
+      width: clamp(15rem, 29vw, 22rem);
+    }
+
+    .brand img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    main {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    main::after {
+      position: absolute;
+      right: -7rem;
+      bottom: -8rem;
+      z-index: -1;
+      width: 25rem;
+      height: 25rem;
+      border: 1px solid rgba(0, 123, 125, 0.1);
+      border-radius: 50%;
+      content: "";
+      box-shadow:
+        0 0 0 4rem rgba(32, 185, 138, 0.035),
+        0 0 0 8rem rgba(255, 138, 24, 0.025);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(17rem, 0.55fr);
+      gap: clamp(3rem, 8vw, 8rem);
+      align-items: end;
+      min-height: calc(100vh - 15rem);
+      padding-block: clamp(5rem, 10vh, 8.5rem);
+    }
+
+    .status {
+      display: inline-flex;
+      gap: 0.65rem;
+      align-items: center;
+      margin: 0 0 2rem;
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .status::before {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: var(--orange);
+      content: "";
+      box-shadow: 0 0 0 0 rgba(255, 138, 24, 0.35);
+      animation: signal 2.6s ease-out infinite;
+    }
+
+    h1 {
+      max-width: 13ch;
+      margin: 0;
+      font-size: clamp(3.25rem, 7vw, 6.9rem);
+      font-weight: 650;
+      letter-spacing: -0.065em;
+      line-height: 0.95;
+      text-wrap: balance;
+    }
+
+    .intro {
+      max-width: 42rem;
+      margin: 2rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      line-height: 1.65;
+    }
+
+    .aside {
+      padding: 1.5rem 0 0;
+      border-top: 3px solid var(--teal);
+    }
+
+    .aside h2 {
+      margin: 0 0 1.25rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .services {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .services li {
+      display: flex;
+      gap: 0.8rem;
+      align-items: baseline;
+      padding-block: 0.8rem;
+      border-bottom: 1px solid var(--line);
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .services li::before {
+      color: var(--orange);
+      content: "•";
+    }
+
+    .return-note {
+      margin: 1.8rem 0 0;
+      padding: 1rem 1.1rem;
+      color: var(--ink);
+      background: #fff3e7;
+      border-left: 3px solid var(--orange);
+      font-size: 0.96rem;
+      font-weight: 650;
+      line-height: 1.55;
+    }
+
+    .site-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      align-items: center;
+      min-height: 6.5rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 0.82rem;
+    }
+
+    .site-footer p {
+      margin: 0;
+    }
+
+    .brand-line {
+      color: var(--ink);
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .brand-line span {
+      color: var(--orange);
+    }
+
+    @keyframes signal {
+      0% { box-shadow: 0 0 0 0 rgba(255, 138, 24, 0.35); }
+      55%, 100% { box-shadow: 0 0 0 0.65rem rgba(255, 138, 24, 0); }
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        width: min(calc(100% - 2rem), var(--content));
+      }
+
+      .site-header {
+        min-height: 6.75rem;
+      }
+
+      .brand {
+        width: min(17rem, 82vw);
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 4.25rem;
+        min-height: auto;
+        padding-block: 4.5rem 5rem;
+      }
+
+      h1 {
+        max-width: 12ch;
+        font-size: clamp(3rem, 14vw, 5rem);
+      }
+
+      .aside {
+        max-width: 28rem;
+      }
+
+      main::after {
+        right: -14rem;
+        bottom: -7rem;
+      }
+
+      .site-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .status::before {
+        animation: none;
+      }
+
+      .skip-link {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header shell">
+    <a class="brand" href="/" aria-label="Arkfield home">
+      <img src="./Arkfield_logo_social-content-campaigns.svg" width="1200" height="300" alt="Arkfield — Social, Content, Campaigns">
+    </a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero shell" aria-labelledby="page-title">
+      <div>
+        <p class="status">Website upgrade in progress</p>
+        <h1 id="page-title">Social campaigns that turn attention into momentum.</h1>
+        <p class="intro">We’re preparing a new Arkfield experience. We help brands plan, create, manage, and improve social media campaigns, supported by expert content and specialist writing.</p>
+      </div>
+
+      <aside class="aside" aria-labelledby="services-title">
+        <h2 id="services-title">Our core services</h2>
+        <ul class="services">
+          <li>Social media strategy</li>
+          <li>Campaign management</li>
+          <li>Content creation</li>
+          <li>Performance reporting</li>
+          <li>Specialist writing</li>
+        </ul>
+        <p class="return-note">Please check back soon. Our full website will be live in the coming weeks.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p class="brand-line">Social <span>•</span> Content <span>•</span> Campaigns</p>
+    <p>&copy; 2026 Arkfield. All rights reserved.</p>
+  </footer>
+</body>
+</html>
